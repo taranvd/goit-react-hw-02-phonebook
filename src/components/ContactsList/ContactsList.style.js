@@ -14,3 +14,10 @@ export const ListItem = styled.li`
   align-items: center;
   gap: 10px;
 `;
+
+export const ButtonStyled = styled.button`
+  &:active {
+    color: white;
+    background-color: blue;
+  }
+`;
