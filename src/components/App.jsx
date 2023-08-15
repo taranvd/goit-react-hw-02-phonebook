@@ -17,8 +17,9 @@ export class App extends Component {
   };
 
   addContact = newContact => {
+    console.log(newContact);
     const existingContact = this.state.contacts.find(
-      contact => contact.name === newContact.name
+      contact => contact.name.toLowerCase() === newContact.name.toLowerCase()
     );
 
     if (existingContact) {
